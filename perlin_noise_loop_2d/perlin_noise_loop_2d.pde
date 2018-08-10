@@ -14,13 +14,13 @@
 
 // Noise Settings
   int noiseSeed = 1; // Change or randomize this to change the noise pattern
-  float noiseScale = 0.005; // Change this to a adjust the scale of the noise
+  float noiseScale = 0.004; // Change this to a adjust the scale of the noise
 
   float barrierSetting = 80; // Where to transition from noiseOriginal to noiseAverage (Percentage of 100)
 
 // Animation Speed
   float speed,
-        speedStep = 0.5; // Change this to increase or decrease the animation speed
+        speedStep = 1; // Change this to increase or decrease the animation speed
 
 // Recording
   boolean record = false; // Set to 'true' to record
@@ -48,7 +48,7 @@ void draw() {
     record = false;
   }
 
-  background(0);
+  background(15);
 
   for(int y = 0; y < rows; y++) {
     for(int x = 0; x < cols; x++) {
@@ -62,14 +62,14 @@ void draw() {
       float noise = getNoise(xNoise, yNoise);
 
       float lineRotation = map(noise, 0.0, 1.0, 1, 360);
-      float lineColor = map(noise, 0.0, 1.0, 0, 255);
+      float lineColor = map(noise, 0.0, 1.0, 50, 200);
 
       stroke(lineColor);
 
       pushMatrix();
       translate(xPos + gridUnitX / 2, yPos + gridUnitY / 2);
       rotate(radians(lineRotation));
-      line(0, 0, gridUnitX / 2, gridUnitY / 2);
+      line(-gridUnitX / 4, -gridUnitY / 4, gridUnitX / 4, gridUnitY / 4);
       popMatrix();
 
     }
