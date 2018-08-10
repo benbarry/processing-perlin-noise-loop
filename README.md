@@ -5,7 +5,7 @@ I wanted to create a seamlessly looping video using Processing where my artwork 
 * https://forum.processing.org/one/topic/how-to-make-perlin-noise-loop.html
 * https://processing.org/discourse/alpha/board_Contribution_Simlation_action_display_num_1088808238.html
 <br>
-
+<hr>
 
 ### Below is a brief illustrated explanation of my solution.
 
