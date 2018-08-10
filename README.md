@@ -5,9 +5,9 @@ I wanted to create a seamlessly looping video using Processing where my artwork 
 * https://forum.processing.org/one/topic/how-to-make-perlin-noise-loop.html
 * https://processing.org/discourse/alpha/board_Contribution_Simlation_action_display_num_1088808238.html
 <br>
-<hr>
 
-## Below is a brief illustrated explanation of my solution.
+
+### Below is a brief illustrated explanation of my solution.
 
 To start with we generate some random Perlin noise and tile it into a 2x2 grid.<br>
 <img src="https://github.com/benbarry/processing-perlin-noise-loop/blob/master/readme-files/step-1.png" width="400">
