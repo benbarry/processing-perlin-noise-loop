@@ -30,38 +30,26 @@ float getNoise(float x, float y) {
   };
 
   float location;
-
-  if (distance[0] == min(distance)) {
-    // North
-    if (distance[0] > tileSize - barrier) {
-      noiseOutput = noiseOriginal;
-    } else {
-      location = norm(y, 0, tileSize - barrier);
-      noiseOutput = (noiseOriginal * location) + (noiseAverage * (1-location));
-    }
-  } else if (distance[1] == min(distance)) {
-    // East
-    if (distance[1] > tileSize - barrier) {
-      noiseOutput = noiseOriginal;
-    } else {
-      location = norm(x, barrier, tileSize);
-      noiseOutput = (noiseOriginal * (1-location)) + (noiseAverage * location);
-    }
-  } else if (distance[2] == min(distance)) {
-    // South
-    if (distance[2] > tileSize - barrier) {
-      noiseOutput = noiseOriginal;
-    } else {
-      location = norm(y, barrier, tileSize);
-      noiseOutput = (noiseOriginal * (1-location)) + (noiseAverage * location);
-    }
+  
+  if (distance[0] > tileSize - barrier && distance[1] > tileSize - barrier && distance[2] > tileSize - barrier && distance[3] > tileSize - barrier) {
+    noiseOutput = noiseOriginal;
   } else {
-    // West
-    if (distance[3] > tileSize - barrier) {
-      noiseOutput = noiseOriginal;
+    if (distance[0] == min(distance)) {
+      // North
+        location = norm(y, 0, tileSize - barrier);
+        noiseOutput = (noiseOriginal * location) + (noiseAverage * (1-location));
+    } else if (distance[1] == min(distance)) {
+      // East
+        location = norm(x, barrier, tileSize);
+        noiseOutput = (noiseOriginal * (1-location)) + (noiseAverage * location);
+    } else if (distance[2] == min(distance)) {
+      // South
+        location = norm(y, barrier, tileSize);
+        noiseOutput = (noiseOriginal * (1-location)) + (noiseAverage * location);
     } else {
-      location = norm(x, 0, tileSize - barrier);
-      noiseOutput = (noiseOriginal * location) + (noiseAverage * (1-location));
+      // West
+        location = norm(x, 0, tileSize - barrier);
+        noiseOutput = (noiseOriginal * location) + (noiseAverage * (1-location));
     }
   }
 
