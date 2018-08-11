@@ -67,9 +67,9 @@ void draw() {
       stroke(lineColor);
 
       pushMatrix();
-      translate(xPos + gridUnitX / 2, yPos + gridUnitY / 2);
+      translate(xPos + gridUnitX, yPos + gridUnitY);
       rotate(radians(lineRotation));
-      line(-gridUnitX / 4, -gridUnitY / 4, gridUnitX / 4, gridUnitY / 4);
+      line(0, 0, gridUnitX / 2, gridUnitY / 2);
       popMatrix();
 
     }
