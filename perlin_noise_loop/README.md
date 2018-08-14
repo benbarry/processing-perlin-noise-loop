@@ -2,7 +2,7 @@
 This was my second solution. It's far simpler and produces a better result.
 
 ### Example Video
-* 
+* https://player.vimeo.com/video/284999269
 <br>
 <hr>
 
