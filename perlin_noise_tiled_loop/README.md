@@ -1,5 +1,5 @@
-# Processing Perlin Noise Loop
-I wanted to create a seamlessly looping video using Processing where my artwork was being modified by moving across a 2D Perlin noise space. I had a difficult time finding information on how to do this, so I'm sharing my solution in hopes it may help someone else. This solution worked well for my project, but I imagine there are better ways to do this. If you have one, I'd love to hear about it.
+# Processing Perlin Noise Tiled Loop
+This was the first solution I came up with. It worked well for my needs at the time, but I wasn't satisfied it was the best solution. I'm leaving it here in case it helps someone else in the future.
 
 ### Example Video
 * https://player.vimeo.com/video/284445212
