@@ -10,7 +10,7 @@ This was the first solution I came up with. It worked well for my needs at the t
 <br>
 <hr>
 
-### Below is a brief illustrated explanation of my solution.
+### Below is a brief illustrated explanation of this solution.
 
 To start with we generate some random Perlin noise and tile it into a 2x2 grid.<br>
 <img src="https://github.com/benbarry/processing-perlin-noise-loop/blob/master/readme-files/step-1.png" width="400">
